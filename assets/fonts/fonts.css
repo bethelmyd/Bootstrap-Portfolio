@@ -1,0 +1,87 @@
+.name{
+
+	font-family:'Bell MT',Batang, Centaur, Gabriola;
+	font-size: 12pt;
+	text-align: center;
+	
+}
+
+.headname{
+
+	font-family:'Bell MT', 'Californian FB', Andalus, Gabriola ,'Eras Light ITC';
+	font-size: 15pt;
+	text-align: center;
+
+}
+
+.descrip{
+
+	font-style: italic;
+	font-family: 'Bell MT';
+	font-size: 12pt;
+	}
+	
+.center{
+
+	text-align:center;
+}
+
+.sidetext{
+
+	font-family: 'Californian FB' ;
+	
+}
+
+.glyph{
+    
+    
+    font-family: 'Californian FB';
+    
+}
+
+.headfont{
+font-family: firstFont;
+font-size:2.2em;
+
+}
+
+.mainheadfont{
+font-family: thirdFont;
+font-size:2em;
+}
+
+.deptheadfont{
+
+font-family:firstFont;
+font-size:2.3em;
+
+}
+
+.topbarfont{
+font-family: firstFont;
+font-size:1.3em;
+}
+
+@font-face {
+    font-family: firstFont;
+    src: url(../fonts/aparaj.ttf);
+}
+
+@font-face {
+    font-family:secondFont;
+src: url(../fonts/Calisto-MT_9070.ttf);
+}
+
+@font-face{
+
+font-family:thirdFont;
+src: url(../fonts/09591_CopperplateGothicLight.ttf);
+
+}
+
+@font-face{
+
+font-family:fourthFont;
+src: url(../fonts/);
+
+}
