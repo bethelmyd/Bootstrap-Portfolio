@@ -2,44 +2,47 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Responsive Portfolio - Home Page</title>
-	<!-- We link our html to the Bootstrap CDN -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
+	<title>Responsive Bootstrap Portfolio - Home Page</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>	
-	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">	 -->
+
 	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+
+
 </head>
 <body>
-	<header class="container-fluid">
-		<section id = "insideHeader" class="container">
-			<div class="row">
-				<section id="leftOfInsideHeader" class="col-md-5">
-					<h2 class="text-center">David Bethelmy</h2>
-				</section>
-				<section class="col-md-2"></section>
-				<section id="rightOfInsideHeader" class="col-md-5">
-					<ul class="nav nav-pills">
-						<li class="active"><a href="#">About</a></li>
-						<li><a href="html/portfolio.html">Portfolio</a></li>
-						<li><a href="html/contact.html">Contact</a></li>
-					</ul>
-				</section>
+
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<h2>David G. Bethelmy</h2>
 			</div>
-		</section>
-	</header>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav nav-pills navbar-right">
+					<li class="active"><a href="#">About</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
 	<main class="container">
 		<section class="row">
 			<section id="leftOfMain" class = "col-md-8">
 				<h3>About Me</h3>
-				<p class="group"><img src="assets/images/dgbprofile.jpg" alt="Picture of David Bethelmy">
+				<p class="group"><span class="myTooltip" data-toggle="tooltip" title="David Bethelmy"><img src="assets/images/dgbprofile.jpg" alt="Picture of David Bethelmy"></span>
 					<strong>Hi!</strong> I'm David and I'm happy to have you visit my site.<br>
 					This isn't my first site but it surely is the first in a very long time.<br>
 					I've been too busy to build one until now because I have been busy teaching and working on completeing a PhD in Computer Science since forever.<br>
@@ -72,24 +75,24 @@
 				</p>
 			</section>
 			<section id = "rightOfMain" class="col-md-4">
-				<h4>Connect with Me</h4>
-				<ul>
-					<li class="">
-						<a href="#"><img src="assets/images/facebook.png" alt="Facebook"></a>
-					</li>
-					<li class="">
-						<a href="https://www.linkedin.com/in/david-bethelmy-2504b312"><img src="assets/images/linkedin_sheep.png" alt="LinkedIn"></a>
 
-					</li>
-					<li class="">
-						<a href="#"><img src="assets/images/github-octocat.png" alt="GitHub"></a>
-
-					</li>
-					<li class="">
-						<a href="#"><img src="assets/images/stackoverflowpx.png" alt="Stack Overflow"></a>
-
-					</li>
-				</ul>
+				<div class="row"><h4 class="text-center">Connect with Me</h4></div>
+				<div class="row">
+					<ul class="nav nav-pills">
+						<li class="">
+							<a href="#" class="myTooltip" data-toggle="tooltip" title="Facebook"><img src="assets/images/facebook.png" alt="Facebook"></a>
+						</li>
+						<li class="">
+							<a href="https://www.linkedin.com/in/david-bethelmy-2504b312" class="myTooltip" data-toggle="tooltip" title="LinkedIn"><img src="assets/images/linkedin_sheep.png" alt="LinkedIn"></a>
+						</li>
+						<li class="">
+							<a href="#" class="myTooltip" data-toggle="tooltip" title="GitHub"><img src="assets/images/github-octocat.png" alt="GitHub"></a>
+						</li>
+						<li class="">
+							<a href="#" class="myTooltip" data-toggle="tooltip" title="Stack Overflow"><img src="assets/images/stackoverflowpx.png" alt="Stack Overflow"></a>
+						</li>
+					</ul>
+				</div>
 			</section>
 		</section>
 	</main>
