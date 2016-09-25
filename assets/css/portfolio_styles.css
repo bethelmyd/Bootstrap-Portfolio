@@ -1,29 +1,26 @@
-#leftOfMain > section {
-	padding:0;
-	margin-left: 10px;
-	margin-bottom: 20px;
+#leftOfMain {
+	padding:0 0 20px 10px;
 }
-#leftOfMain > section > div{
+
+#leftOfMain .left, #leftOfMain .right{
 	position: relative;
 	width: 315px;
 	height: 360px;
-	padding:0;
+	padding:0 ;
+	margin: 0 auto 10px;
+	border-radius: 5px;
 }
 
-#leftOfMain > section > div.left{
-	float: left;
+#h3{
+	padding: 10px;
 }
 
-#leftOfMain section > div.right{
-	float: right;
-}
-
-#leftOfMain section h3{
+#leftOfMain .left h3, #leftOfMain .right h3{
 	border: none;
 	color: white;
 	background-color: teal;
 	padding: 10px 0 10px 0;
-	margin: 0;
+	margin-bottom: 0;
 	width: 315px;
 	position: absolute;
 	bottom: 5px;
@@ -33,7 +30,7 @@
 	text-align: center;
 }
 
-.row > div > img{
+#leftOfMain  img{
 	width:315px;
 	height: 360px;
 	border:none;
